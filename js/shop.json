@@ -1,0 +1,42 @@
+[
+{
+	"url":"img/shop1.jpg",
+	"name":"诗留美屋 海泥洁面膏",
+	"price":"¥29.00",
+	"doller":"JP¥570.00",
+	"seller":"海豚村日本精品馆",
+	"img":"county1.png"
+},
+{
+	"url":"img/shop2.jpg",
+    "name":"挪威小鱼鱼肝油",
+	"price":"¥188.00",
+	"doller":"US$28.40",
+	"seller":"美国WNC保健品专营店",
+	"img":"county2.png"
+},
+{
+	"url":"img/shop3.jpg",
+    "name":"【包邮】皇家花蜜蜂毒眼霜",
+	"price":"¥279.00",
+	"doller":"NZ$56.62",
+	"seller":"海豚村新西兰精品馆",
+	"img":"county3.png"
+},
+{
+	"url":"img/shop4.jpg",
+    "name":"Lansinoh 孕妇防溢乳垫",
+	"price":"¥128.00",
+	"doller":"£16.32",
+	"seller":"海豚村英国精品馆",
+	"img":"county4.png"
+},
+{
+	"url":"img/shop5.jpg",
+    "name":"【5块包邮】Ecostore 香皂套",
+	"price":"¥128.00",
+	"doller":"NZ$25.08",
+	"seller":"KiwiDiscovery新西兰特色馆",
+	"img":"county5.png"
+}
+]

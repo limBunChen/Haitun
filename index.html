@@ -1,0 +1,2372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+}
+img{cursor:pointer;}
+body {
+	-moz-user-select: none;
+}
+li, a {
+	list-style: none;
+	text-decoration: none;
+}
+#box {
+	width: 100%;
+}
+#top {
+	width: 1264px;
+	height: 40px;
+	background: url(img/top.jpg) no-repeat top center;
+}
+#top a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*------------------------------头部导航-----------------------------*/
+#top_nav {
+	width: 1264px;
+	height: 29px;
+	border-bottom: 1px solid #ccc;
+}
+#top_nav .left {
+	float: left;
+}
+#top_nav .left b {
+	color: #787878;
+	line-height: 29px;
+	margin: 0 10px 0 37px;
+}
+#top_nav .left i {
+	background: url(img/audio.png) left center no-repeat;
+	padding-left: 20px;
+}
+#top_nav .left i a {
+	color: #ff8a00;
+	line-height: 29px;
+}
+#top_nav .right {
+	float: right;
+	margin-right: 36px;
+}
+#top_nav .right li {
+	float: left;
+	background: url(img/border.png) right center no-repeat;
+}
+#top_nav .right li:last-child {
+	background: none;
+}
+#top_nav .right li a {
+	color: #787878;
+	padding: 0 10px;
+	line-height: 30px;
+}
+/*------------------------------log-----------------------------*/
+#log {
+	width: 1264px;
+	height: 108px;
+}
+#log ul li, #log ul li img {
+	float: left;
+}
+#log #img1 {
+	padding: 18px 68px 0 37px;
+}
+#log #img2 {
+	padding-top: 35px;
+	padding-right: 36px;
+}
+#log ul li p {
+	width: 390px;
+	height: 34px;
+	background: #009de0;
+	margin-top: 30px;
+	margin-right: 10px;
+	float: left;
+}
+#log ul li p .text {
+	width: 308px;
+	height: 30px;
+	float: left;
+	border: 1px solid #009de0;
+	padding-top: 2px;
+}
+#log ul li p .btn {
+	width: 76px;
+	height: 32px;
+	float: left;
+	float: left;
+	background: url(img/searchlog.png) no-repeat center;
+	border: none;
+}
+#log ul li .shopcar {
+	width: 87px;
+	height: 30px;
+	float: right;
+	border: 2px solid #ccc;
+	background: #f8f8f8;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	margin-top: 30px;
+	background: url(img/shoplog.png) left center no-repeat;
+	padding-left: 5px;
+}
+#log ul li .shopcar a {
+	font-size: 13px;
+	color: #333;
+}
+.shopcar span {
+	display: block;
+	width: 28px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	background: #F03;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	top: -14px;
+	left: 5px;
+}
+/*------------------------------nav-----------------------------*/
+#nav {
+	width: 1264px;
+	height: 40px;
+	background: #0099e6;
+}
+#nav .classfy {
+	width: 182px;
+	height: 40px;
+	background: #0086d4;
+	line-height: 40px;
+	color: #fff;
+	font-weight: 700;
+	background: #0086d4 url(img/fenlei.png) 16px center no-repeat;
+	padding-left: 40px;
+	margin-left: 38px;
+	float: left;
+	position: relative;
+}
+#nav .nav li {
+	float: left;
+}
+#nav .nav li a {
+	padding: 0 22px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: 700;
+}
+#nav .nav .area {
+	background: url(img/jiantou.png) right center no-repeat;
+	position: relative;
+}
+#nav .nav .area ul {
+	width: 210px;
+	height: 300;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background: #FFF;
+	z-index: 1;
+	display: none;
+}
+#nav .nav .area ul li a {
+	color: #666;
+	font-weight: 500;
+	line-height: 30px;
+}
+#nav .nav .area ul li a:hover {
+	color: #008EE4;
+}
+#nav .nav .area dl {
+	background: url(img/border1.png) no-repeat bottom center;
+	padding: 10px 0;
+}
+#nav .nav .area dt {
+	color: #008EE4;
+	font-weight: 600;
+	padding-left: 22px;
+}
+#nav .union {
+	width: 190px;
+	height: 33px;
+	float: left;
+	margin-left: 137px;
+	padding: 7px 0 0 10px;
+	background: #008ee0;
+	position: relative;
+}
+#nav .union ul {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+#nav .union li {
+	width: 158px;
+	height: 188px;
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 20px 0 0 42px;
+}
+#nav .all {
+	width: 222px;
+	height: 420px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+#nav .all li {
+	width: 222px;
+	height: 60px;
+	background: #f1fafd url(img/border1.png) bottom center no-repeat;
+	position: relative;
+}
+.bgColor{background-color:#fff !important;}
+#nav .all .child {
+	position: absolute;
+	left: 218px;
+	top: 0;
+	width: 976px;
+	height: 420px;
+	background:url(img/erji.png) no-repeat;
+	z-index: 4;
+	display: none;
+}
+#nav .all .child ul{float:left;}
+#nav .borderL {
+	width: 6px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: none;
+}
+#nav .all li dt {
+	width: 182px;
+	height: 15px;
+}
+#nav .all li dt span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 6px 0 15px;
+}
+#nav .all li dd {
+	padding: 10px 0 0 40px;
+}
+#nav .all li dt a {
+	color: #0092d4;
+	font-size: 14px;
+	font-weight: 700;
+}
+#nav .all li dd a {
+	color: #66a3cf;
+}
+/*------------------------------banner-----------------------------*/
+#banner {
+	width: 1264px;
+	height: 420px;
+}
+.banner {
+	background: #FF6155;
+}
+#lunbo {
+	width: 770px;
+	height: 420px;
+	position: relative;
+	overflow: hidden;
+	margin-left: 260px;
+}
+#lunbo .pic {
+	width: 5000px;
+	height: 420px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#lunbo .pic img {
+	width: 770px;
+	height: 420px;
+}
+#lunbo .pic li {
+	width: 770px;
+	height: 420px;
+	float: left;
+}
+#lunbo .num {
+	width: 1264px;
+	position: absolute;
+	bottom: 10px;
+	left: -250px;
+	text-align: center;
+	font-size: 0px;
+}
+#lunbo .num li {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 3px;
+}
+#lunbo .num li.on {
+	background: #F60;
+}
+#lunbo .btn {
+	width: 38px;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	text-align: center;
+1  font-size: 40px;
+	display: none;
+}
+#lunbo:hover .btn {
+	display: block;
+}
+#lunbo .btn_l {
+	left: 10px;
+}
+#lunbo .btn_r {
+	right: 10px;
+}
+.active {
+	background: #fff;
+}
+#shop {
+	width: 1264px;
+	height: 300px;
+	padding-left: 20px;
+	margin-bottom: 56px;
+}
+#shop li {
+	width: 180px;
+	height: 275px;
+	float: left;
+	padding: 10px 10px 0 10px;
+	text-align: center;
+}
+#shop li img {
+	width: 180px;
+	height: 180px;
+}
+#shop li p {
+	line-height: 25px;
+}
+.name a {
+	font-size: 13px;
+	color: #333;
+}
+.price em {
+	font-size: 16px;
+	color: red;
+	font-weight: 700;
+	margin-right: 5px;
+}
+.price i, span {
+	font-size: 14px;
+	color: #999;
+}
+.seller span {
+	padding-left: 25px;
+	background-repeat: no-repeat !important;
+	background-position: left;
+}
+#shop li:last-child {
+	padding: 0;
+	margin-left: 10px;
+}
+#country {
+	width: 1188px;
+	padding: 0 38px;
+	margin-bottom: 42px;
+}
+#country dl {
+	width: 1188px;
+	height: 386px;
+}
+#country dl dt {
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+#main dl dt h1 {
+	float: left;
+	font-size: 24px;
+	font-weight:900;
+}
+#main dl dt span {
+	font-size: 16px;
+	font-weight: 600;
+}
+#main dl dt a {
+	float: right;
+	color: #000;
+	font-size: 12px;
+	padding-right: 10px;
+}
+#country dl .mall li {
+	width: 310px;
+	height: 170px;
+	float: left;
+	padding: 3px;
+}
+#country dl .mall li:first-child {
+	width: 230px;
+	height: 350px;
+}
+#global {
+	width: 1188px;
+	padding: 0 38px;
+	height: 536px;
+}
+#global .global {
+	width: 1188px;
+	height: 386px;
+}
+#global dl dt {
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+#global dl .sell li {
+	width: 390px;
+	height: 502px;
+	float: left;
+	padding: 2px;
+}
+.sell dl {
+	width: 390px;
+	height: 307px;
+	padding-top: 15px;
+}
+.sell dl .introduce {
+	width: 390px;
+	height: 80px;
+	margin-bottom: 50px;
+}
+.sell .introduce img, .intro {
+	float: left;
+}
+.sell .introduce img {
+	padding: 20px 35px 0 42px;
+}
+.sell .introduce .intro {
+	padding-top: 15px;
+	color: #666;
+}
+.sell dd .goods {
+	float: left;
+	text-align: center;
+	width: 140px;
+	height: 180px;
+	padding: 20px;
+	line-height: 20px;
+	margin-top: 5px;
+}
+#mom_baby, #toys, #health, #beauty, #care, #kitchen, #foods {
+	width: 1188px;
+	padding: 0 38px;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	height: 520px;
+}
+#assortment .dady_dl {
+	width: 1188px;
+	height: 482px;
+}
+#assortment .dady_dl .dady_dt {
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+#assortment .dady_dl .dady_dd {
+	width: 1188px;
+	;
+	height: 480px;
+	border-stlye: solid;
+	border-width: 1px;
+}
+#assortment .dady_dl .mom {
+	width: 944px;
+	height: 480px;
+	float: left;
+}
+#assortment .dady_dl .mom li {
+	float: left;
+	border: 1px solid #ccc;
+}
+#assortment .dady_dl .mom li:first-child {
+	position: relative;
+}
+#assortment .hot {
+	width: 230px;
+	height: 160px;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	padding-left: 24px;
+	text-align: center;
+}
+#assortment .hot h3 {
+	font-weight: 700;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	margin-left: -24px;
+}
+#assortment .hot a {
+	display: block;
+	color: #333;
+}
+#assortment .hot p {
+	float: left;
+	padding-right: 20px;
+	line-height: 34px;
+	text-align: none;
+}
+#assortment .bigger img {
+	float: left;
+	padding: 44px 30px 0px 42px;
+}
+#assortment .bigger div {
+	float: left;
+	padding-top: 70px;
+}
+#assortment .bigger div a {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333;
+}
+#assortment .bigger div .int {
+	padding: 8px 0 10px 0;
+	line-height: 20px;
+	color: #999;
+}
+#assortment .normal {
+	text-align: center;
+}
+#assortment .normal img {
+	padding: 20px 0px 36px 0px;
+}
+#assortment .normal p {
+	line-height: 20px;
+	font-size: 16px;
+}
+#assortment .dady_dd .mom_right {
+	width: 242px;
+	height: 480px;
+	float: left;
+	border-top: 6px solid #Ccc;
+	position: relative;
+	overflow: hidden;
+}
+#assortment .dady_dd .mom_right .list {
+	width: 1000px;
+	height: 464px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 16px 0 0 22px;
+	margin-top: 20px;
+}
+#assortment .dady_dd .mom_right .list li {
+	width: 192px;
+	height: 416px;
+	float: left;
+	margin-right: 40px;
+}
+#assortment .dady_dd .mom_right .list_num {
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	left: 65px;
+	text-align: center;
+	font-size: 0px;
+}
+.list_num li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 3px;
+	background: #666;
+}
+.list_num li.on {
+	background: #F60;
+}
+.on {
+	background: #7f7f7f;
+}
+#assortment .list li dd {
+	width: 194px;
+	height: 100px;
+	border-top: 1px solid #ccc;
+}
+#assortment .list li dd img {
+	float: left;
+	padding: 25px 0 0 20px;
+}
+#assortment .list li dd div {
+	float: left;
+	padding: 25px 0 0 10px;
+	;
+}
+#assortment .list li dd div p {
+	line-height: 30px;
+}
+#assortment .list li dd div a {
+	font-size: 12px;
+	color: #333;
+}
+#assortment .list li dd div .int {
+	padding: 8px 0 10px 0;
+	line-height: 20px;
+	color: #999;
+}
+#assortment .mom_right h3 {
+	width: 194px;
+	height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 70px;
+	padding-top: 10px;
+}
+#brand {
+	width: 1188px;
+	height: 326px;
+	padding: 0 38px;
+	margin-bottom: 40px;
+}
+#brand #brand_left {
+	float: left;
+}
+#brand #brand_left dl {
+	background: #f5f5f5;
+	width: 944px;
+	height: 330px;
+}
+#brand #brand_left dl dt h1 {
+	float: left;
+	font-size: 22px;
+	font-weight: 900;
+	width: 944px;
+	height: 26px;
+	margin-bottom: 10px;
+}
+#brand #brand_left dl dd ul {
+	width: 944px;
+	height: 330px;
+}
+#brand #brand_left dl dd ul li .small {
+	width: 342px;
+	height: 88px;
+	padding: 5px;
+}
+#brand #brand_left dl dd ul li {
+	float: left;
+}
+#brand #brand_right {
+	width: 242px;
+	height: 330px;
+	float: left;
+	background: #f5f5f5;
+}
+#brand #brand_right dl dt {
+	width: 242px;
+	height: 26px;
+}
+#brand #brand_right dl dt h1 {
+	float: left;
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#brand #brand_right dl dt a {
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 20px;
+	background: #fff;
+	margin-top: 3px;
+	font-size: 14px;
+	color: #ccc;
+}
+.prev {
+	margin-left: 60px;
+}
+#brand #brand_right dl dt b, i {
+	font-size: 14px;
+	color: #000;
+}
+#brand #brand_right dl dd {
+	text-align: center;
+	padding-top: 10px;
+}
+#brand #brand_right dl dd p {
+	line-height: 20px;
+	font-size: 14px;
+	padding-top: 15px;
+}
+#mess {
+	width: 1264px;
+	height: 101px;
+	background: url(img/mess.png) no-repeat top center;
+}
+#mess a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#copyright {
+	width: 1228px;
+	height: 220px;
+	padding-left: 36px;
+	padding-top: 34px;
+	position: relative;
+	background: url(img/erwei.png) right top no-repeat;
+}
+#copyright .chat {
+	padding: 0 12px;
+	display: block;
+	color: #fff;
+	;
+	border-radius: 4px;
+	line-height: 30px;
+	font-weight: 700;
+	background: #00AEED;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 26px;
+}
+#copyright ul li {
+	float: left;
+}
+#copyright ul li h4 {
+	font-weight: 800;
+	font-size: 12px;
+	color: #000;
+}
+#copyright ul li dd {
+	line-height: 26px;
+	margin-right: 70px;
+	margin-top: 5px;
+	font-weight: 600;
+}
+#copyright ul li a {
+	font-size: 12px;
+	color: #666;
+}
+#copyright ul li a:hover{color:#00AEED;}
+#copyright p {
+	font-size: 14px;
+	color: #666;
+	position: absolute;
+	bottom: 0;
+	left: 450px;
+}
+#stair {
+	width: 30px;
+	background: #fff;
+	position: fixed;
+	right: 0px;
+	top: 30%;
+	display:none;
+}
+#stair ul {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: 30px;
+}
+#stair li {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	color: #fff;
+	padding-top: 5px;
+}
+#search{width:100%;height:50px;background:#1D6EAE;position:fixed;top:0;z-index:5;display:none;}
+#search ul li{float:left;}
+#search ul li img{
+	margin-left:40px;
+}
+#search ul li p {
+	width: 480px;
+	height: 34px;
+	background: #009de0;
+	float:right;
+	margin-top:8px;
+	margin-left:440px;
+}
+#search ul li p .text {
+	width: 378px;
+	height: 30px;
+	float: left;
+	border: 1px solid #009de0;
+	padding-top: 2px;
+}
+#search ul li p .btn {
+	width: 96px;
+	height: 32px;
+	float: left;
+	float: left;
+	background: url(img/searchlog.png) no-repeat center;
+	border: none;
+}
+.color{background:#0FF !important;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.js"></script>
+<!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+
+<body>
+<div id ="box">
+  <div id ="top"> <a href="http://www.haituncun.com/" target="_blank" ></a> </div>
+  <div id ="top_nav">
+    <ul>
+      <li class ="left"> <b>你好，欢迎来到海豚村</b> <i><a href="" >关于国庆期间物流影响通知</a></i> </li>
+      <li class ="right">
+        <ul>
+          <li><a href="" >登陆</a></li>
+          <li><a href="" >注册</a></li>
+          <li><a href="" >手机版</a></li>
+          <li><a href="" >关注</a></li>
+          <li><a href="" >在线客服</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id ="log">
+    <ul>
+      <li> <a href=""><img src="img/log.png" id ="img1"/></a> <a href=""><img src="img/log1.png" id ="img2"></a> </li>
+      <li>
+        <p>
+          <input type="text" placeholder="搜“美迪惠尔”试试,针剂补水面膜" class ="text"/>
+          <input type="button" class ="btn"/>
+        </p>
+        <div class ="shopcar"> <span>0</span> <a href="">购物车</a> </div>
+      </li>
+    </ul>
+  </div>
+  <div id ="nav">
+    <div class ="classfy"> 全部商品分类
+      <ul class="all">
+        <li>
+          <div class ="borderL"></div>
+          <div class ="child">
+            <!--<ul class ="left">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>-->
+          </div>
+          <dl>
+            <dt><span></span><a href="">母婴用品</a></dt>
+            <dd> <a href="">配方奶粉</a> <a href="">营养辅食</a> <a href="">洗护用品</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">营养保健</a></dt>
+            <dd> <a href="">儿童营养</a> <a href="">减肥瘦身</a> <a href="">美容养颜</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">美容药妆</a></dt>
+            <dd> <a href="">卸妆洁面</a> <a href="">补水保湿</a> <a href="">个人彩妆</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">个人护理</a></dt>
+            <dd> <a href="">洗发护发</a> <a href="">沐浴用品</a> <a href="">牙膏</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">家居厨卫</a></dt>
+            <dd> <a href="">精品梳</a> <a href="">滤水壶</a> <a href="">清洁用品</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">食品精选</a></dt>
+            <dd> <a href="">功能茶</a> <a href="">果泥果汁</a> <a href="">营养代餐</a> </dd>
+          </dl>
+        </li>
+        <li>
+          <div class ="borderL"></div>
+          
+          <dl>
+            <dt><span></span><a href="">童装玩具</a></dt>
+            <dd> <a href="">益智积木</a> <a href="">毛绒玩具</a> <a href="">LEGO</a> </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <ul class ="nav">
+      <li><a href="">首页</a></li>
+      <li><a href="">全球精品馆</a></li>
+      <li><a href="">全球精选</a></li>
+      <li><a href="">全球商家</a></li>
+      <li class ="area"> <a href="" >欧洲</a>
+        <ul>
+          <li>
+            <dl>
+              <dt>英国</dt>
+              <dd><a href="">英国Feelunique美妆</a></dd>
+              <dd><a href="">英国TCL药店连锁</a></dd>
+              <dd><a href="">英国BFSO日用品百货商城</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>德国</dt>
+              <dd><a href="">德国JAKO-O婴童用品商城</a></dd>
+              <dd><a href="">德国BA保镖药房</a></dd>
+              <dd><a href="">德国UKA优卡有机生活馆</a></dd>
+              <dd><a href="">德国HCP品质生活馆</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>法国</dt>
+              <dd><a href="">法国1001Pharmacies大药房</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </li>
+      <li class ="area"> <a href="" >澳新</a>
+        <ul>
+          <li>
+            <dl>
+              <dt>澳洲</dt>
+              <dd><a href="">澳洲Amcal连锁药房</a></dd>
+              <dd><a href="">澳州PO药品连锁店</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新西兰</dt>
+              <dd><a href="">KiwiDiscovery新西兰特色馆</a></dd>
+              <dd><a href="">新西兰NP健康药店</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </li>
+      <li class ="area"> <a href="" >美洲</a>
+        <ul>
+          <li>
+            <dl>
+              <dt>美国</dt>
+              <dd><a href="">美国WMC保健品专营店</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </li>
+      <li class ="area"> <a href="" >亚洲</a>
+        <ul>
+          <li>
+            <dl>
+              <dt>韩国</dt>
+              <dd><a href="">韩国 L&P Cosmetic</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class ="union"> <a href=""><img src="img/yinlian.png"/></a>
+      <ul>
+        <li><a><img src="img/union1.png"></a></li>
+        <li><a><img src="img/union2.png"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="banner" class ="banner">
+    <div id ="lunbo" >
+      <ul class="pic">
+        <li><a href="#"><img src="img/banner1.jpg" alt=""/></a></li>
+        <li><a href="#"><img src="img/banner2.jpg" alt=""/></a></li>
+        <li><a href="#"><img src="img/banner3.jpg" alt=""/></a></li>
+        <li><a href="#"><img src="img/banner4.jpg" alt=""/></a></li>
+        <li><a href="#"><img src="img/banner5.jpg" alt=""/></a></li>
+      </ul>
+      <ul class="num">
+        <li class ="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="btn btn_l">&lt;</div>
+      <div class="btn btn_r">&gt;</div>
+    </div>
+  </div>
+  <div id ="shop">
+    <ul>
+      <!--<li>
+                	<img src="img/niule.jpg"/>
+                    <p class ="name"><a href="">【包邮】纽乐 肾宝胶囊</a></p>
+                    <p class ="price"><em>￥228.00</em><i>NZ$44.67</i></p>
+                    <p class ="seller"><span>海豚村新西兰精品馆</span></p>
+               </li>-->
+      <li> <img />
+        <p class ="name"><a href=""></a></p>
+        <p class ="price"><em></em><i></i></p>
+        <p class ="seller"><span></span></p>
+      </li>
+      <li> <img/>
+        <p class ="name"><a href=""></a></p>
+        <p class ="price"><em></em><i></i></p>
+        <p class ="seller"><span></span></p>
+      </li>
+      <li> <img/>
+        <p class ="name"><a href=""></a></p>
+        <p class ="price"><em></em><i></i></p>
+        <p class ="seller"><span></span></p>
+      </li>
+      <li> <img />
+        <p class ="name"><a href=""></a></p>
+        <p class ="price"><em></em><i></i></p>
+        <p class ="seller"><span></span></p>
+      </li>
+      <li> <img />
+        <p class ="name"><a href=""></a></p>
+        <p class ="price"><em></em><i></i></p>
+        <p class ="seller"><span></span></p>
+      </li>
+      <li class ="more"> <a href=""> <img src="img/shop6.jpg" style="width:200px;height:285px;"/></a> </li>
+    </ul>
+  </div>
+  <div id ="main">
+    <div id ="country" class ="alike">
+      <dl>
+        <dt>
+          <h1>全球精品馆<span> / Country Mall</span></h1>
+          <a href="">查看更多 >></a> </dt>
+        <dd class ="mall">
+          <ul>
+            <li><a href=""><img src="img/mall1.png"></a></li>
+            <li><a href=""><img src="img/mall2.png"></a></li>
+            <li><a href=""><img src="img/mall3.png"></a></li>
+            <li><a href=""><img src="img/mall4.png"></a></li>
+            <li><a href=""><img src="img/mall5.png"></a></li>
+            <li><a href=""><img src="img/mall6.png"></a></li>
+            <li><a href=""><img src="img/mall7.png"></a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div id ="global" class ="alike">
+      <dl class="global">
+        <dt>
+          <h1>全球商家<span> / Global Seller</span></h1>
+          <a href="">查看更多 >></a> </dt>
+        <dd class ="sell">
+          <ul>
+            <li> <a href=""><img src="img/glo1.png"></a>
+              <dl>
+                <dt class ="introduce"> <img src="img/sell-log1.jpg">
+                  <p class ="intro"> Pharmacy Online 是一家家喻户晓的澳洲最</br>
+                    大的药品保健品和营养品电商之一，总部位</br>
+                    于澳大利亚新南威尔士洲，客户超过60万 </p>
+                </dt>
+                <dd>
+                  <div class ="goods"> <img src="img/sell1.jpg" />
+                    <p class ="name"><a href="">【2件包邮装】Aveeno</a></p>
+                    <p class ="price"><em>¥129.00</em><i>AU$24.39</i></p>
+                  </div>
+                  <div class ="goods"> <img src="img/sell2.jpg" />
+                    <p class ="name"><a href="">B.box 重力球吸管杯...</a></p>
+                    <p class ="price"><em>¥138.00</em><i> AU$26.10</i></p
+                                        >
+                  </div>
+                </dd>
+              </dl>
+            </li>
+            <li> <a href=""><img src="img/glo2.png" /></a>
+              <dl>
+                <dt class ="introduce"> <img src="img/sell-log2.png"style ="padding-top:40px;"/>
+                  <p class ="intro"> Net Pharmacy 总部位于新西兰</br>
+                    奥克兰市帕内尔区的外郊，是一</br>
+                    家行业内领先的在线药房 </p>
+                </dt>
+                <dd>
+                  <div class ="goods"> <img src="img/sell3.jpg"  />
+                    <p class ="name"><a href="">澳佳宝 无味鱼油胶囊</a></p>
+                    <p class ="price"><em>¥152.60</em><i>NZ$29.90</i></p>
+                  </div>
+                  <div class ="goods"> <img src="img/sell4.jpg" />
+                    <p class ="name"><a href="">澳佳宝果味鱼油胶囊</a></p>
+                    <p class ="price"><em>¥169.00</em><i> NZ$33.11</i></p
+                                        >
+                  </div>
+              </dl>
+            </li>
+            <li> <a href=""><img src="img/glo3.png"></a>
+              <dl>
+                <dt class ="introduce"> <img src="img/sell-log3.png"style ="padding-top:40px;"/>
+                  <p class ="intro"> Bodyguard Apotheke 是德国连锁药房</br>
+                    Einhorn Apotheke 的线上药房，德国</br>
+                    国家认证，德国最大的连锁药房之一 </p>
+                </dt>
+                <dd>
+                  <div class ="goods"> <img src="img/sell5.jpg"  />
+                    <p class ="name"><a href="">Abtei 高钙D600+D3健骨</a></p>
+                    <p class ="price"><em>¥29.00 </em><i>€3.70</i></p>
+                  </div>
+                  <div class ="goods"> <img src="img/sell6.jpg" />
+                    <p class ="name"><a href="">Abtei 静脉曲张美...</a></p>
+                    <p class ="price"><em>¥38.80</em><i> €4.95</i></p
+                                        >
+                  </div>
+              </dl>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!---->
+    <div id ="assortment">
+      <div id ="mom_baby" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>母婴用品<span> / Mom & Baby Products</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/mom-1.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="toys" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>童装玩具<span> / Kid Toys</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/toys1.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="health" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>营养保健<span> / Health & Nutritions</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/health.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="beauty" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>美容药妆<span> / Beauty</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/beauty.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="care" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>个人护理<span> / Personal Care</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/care.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="kitchen" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>家居厨卫<span> / Home & Kitchen</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/kitchen.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">配方奶粉</a> <a href="">宝宝洗浴</a> <a href="">宝宝护肤</a> </p>
+                        <p> <a href="">宝宝营养</a> <a href="">喂养用品</a> <a href="">吸奶/储奶器</a> </p>
+                        <p> <a href="">羊奶粉</a> <a href="">奶瓶奶粉</a> <a href="">备孕营养</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/mom1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>【包邮】荷兰牛栏标准...</h4>
+                    </a>
+                    </p>
+                    <p class ="int">含独特的益生元能促进肠道益</br>
+                      生菌生长。多种天然维生素有</p>
+                    <p class ="price"><em>¥258.00 </em><i>€32.70</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/mom2.png" />
+                  <p class ="name"><a href="">【包邮】美素Friso配方奶粉2段</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom3.png" />
+                  <p class ="name"><a href="">挪威小鱼鱼肝油</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom4.png" />
+                  <p class ="name"><a href="">【包邮装】B.Box3合1吸管碗+...</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/mom5.png" />
+                  <p class ="name"><a href="">BadyBjorn经典婴儿背带1条</a></p>
+                  <p class ="price"><em>¥218.00</em><i> NZ$30.34</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div id ="foods" class ="alike">
+        <dl class ="dady_dl">
+          <dt class ="dady_dt">
+            <h1>食品精选<span> / Groceries Foods</span></h1>
+            <a href="">查看更多 >></a> </dt>
+          <dd class ="dady_dd">
+            <div class ="mom">
+              <ul>
+                <li style="width:300px;height:480px" > <img src="img/mom-7.jpg"/>
+                  <div class ="hot">
+                    <dl>
+                      <dt>
+                        <h3>最热HOT</h3>
+                      </dt>
+                      <dd>
+                        <p> <a href="">巧克力</a> <a href="">麦片</a> <a href="">代餐奶昔</a> </p>
+                        <p> <a href="">威化饼干</a> <a href="">香浓咖啡</a> </p>
+                        <p> <a href="">瑜伽茶</a> <a href="">黑糖</a> </p>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li style="width:426px;height:240px" class ="bigger"> <img src="img/food1.png"/>
+                  <div>
+                    <p class ="name">
+                    <a href="">
+                    <h4>Vitalis多种水果早餐麦..</h4>
+                    </a>
+                    </p>
+                    <p class ="int">多种谷物全麦片与9种水果，</br>
+                      美味无以伦比，天然健康...</p>
+                    <p class ="price"><em>¥50.90 </em><i>€6.49</i></p>
+                  </div>
+                </li>
+                <li style="width:212px;height:240px" class="normal" > <img src="img/food2.png" />
+                  <p class ="name"><a href="">【包邮装】The Market Grocer...</a></p>
+                  <p class ="price"><em>¥109.00</em><i> AU$20.61</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/food3.png" />
+                  <p class ="name"><a href="">维雷德 天然有机下午茶</a></p>
+                  <p class ="price"><em>¥80.50</em><i> US$9.77</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/food4.png" />
+                  <p class ="name"><a href="">瑜伽茶 健康快速瘦身茶</a></p>
+                  <p class ="price"><em>¥108.00</em><i> US$15.41</i></p>
+                </li>
+                <li style="width:212px;height:240px" class="normal"> <img src="img/food5.png" />
+                  <p class ="name"><a href="">贺寿利 儿童高钙牛奶片</a></p>
+                  <p class ="price"><em>¥52.62</em><i> AU$9.95</i></p>
+                </li>
+              </ul>
+            </div>
+            <div class ="mom_right">
+              <h3>最新热卖New</h3>
+              <ul class="list">
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt></dt>
+                    <dd> <img src="img/momr1.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr2.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr3.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                    <dd> <img src="img/momr4.png"/>
+                      <div>
+                        <p class ="name"><a href="">高浓度葡萄籽精华</a></p>
+                        <p class ="price"><em>¥634.32 </em></p>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="list_num">
+                <li class ="on"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div id ="brand">
+    <div id ="brand_left">
+      <dl>
+        <dt>
+          <h1>热门品牌<span> / Top Brand</span></h1>
+        </dt>
+        <dd>
+          <ul>
+            <li><a href=""><img src="img/brand1.png" /></a></li>
+            <li><a href=""><img src="img/brand01.png" class ="small" style="padding-top:0"/></a></li>
+            <li><a href=""><img src="img/brand02.png" class ="small" style="padding-top:0"/></a></li>
+            <li><a href=""><img src="img/brand03.png" class ="small"/></a></li>
+            <li><a href=""><img src="img/brand04.png" class ="small"/></a></li>
+            <li><a href=""><img src="img/brand05.png" class ="small"/></a></li>
+            <li><a href=""><img src="img/brand06.png" class ="small"/></a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div id ="brand_right">
+      <dl>
+        <dt>
+          <h1>晒单区</h1>
+          <a href="javascript:" class ="prev">&lt;</a> <b>1</b> / <i>10</i> 
+          <a href="javascript:" class ="next">&gt;</a> 
+       	</dt>
+        <dd> <img src="img/pinglun.png"/>
+          <p>很快！收到很惊喜！还是更喜欢海豚</br>
+            村，老顾客了，哈哈哈</p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div id ="mess"> <a href=""></a> </div>
+  <div id ="copyright">
+    <ul>
+      <li>
+        <dl>
+          <dt><img src="img/logc.png"/></dt>
+          <dd> <a href="" class ="chat">进入在线咨询</a> </dd>
+          <dd>客服电话:400-090-5920</dd>
+          <dd>周一到周日9:00-21:00</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <h4>帮助中心</h4>
+          </dt>
+          <dd> <a href="">购物流程</a> </dd>
+          <dd> <a href="">海豚玩币法</a> </dd>
+          <dd> <a href="">用户晒单</a> </dd>
+          <dd> <a href="">关税&清关</a> </dd>
+          <dd> <a href="">身份证报关</a> </dd>
+          <dd> <a href="">运算计算表</a> </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <h4>支付与物流</h4>
+          </dt>
+          <dd> <a href="">关于价格</a> </dd>
+          <dd> <a href="">关于支付</a> </dd>
+          <dd> <a href="">关于物流</a> </dd>
+          <dd> <a href="">关于优惠券</a> </dd>
+          <dd> <a href="">FAQ</a> </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <h4>售后服务</h4>
+          </dt>
+          <dd> <a href="">退货退款流程</a> </dd>
+          <dd> <a href="">退货退款政策</a> </dd>
+          <dd> <a href="">如何索取发票</a> </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <h4>关于我们</h4>
+          </dt>
+          <dd> <a href="">关于海豚村</a> </dd>
+          <dd> <a href="">联系我们</a> </dd>
+          <dd> <a href="">网站地图</a> </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>
+            <h4>关注海豚村</h4>
+          </dt>
+          <dd> <a href="">海豚村新浪微博</a> </dd>
+          <dd> <a href="">海豚村官方微信</a> </dd>
+        </dl>
+      </li>
+    </ul>
+    <p> COPYRIGHT&copy;2013-2016 ALL Rights Reserveed 粤ICP备 13081207 </p>
+  </div>
+  <div id ="stair">
+    <ul>
+      <li style="border-top:1px solid #ccc">全球精品</li>
+      <li>全球商家</li>
+      <li>母婴用品</li>
+      <li>童装玩具</li>
+      <li>营养保健</li>
+      <li>美容药妆</li>
+      <li>个人护理</li>
+      <li>家具厨卫</li>
+      <li>食品精选</li>
+      <li style="font-size:14px;">Top</li>
+    </ul>
+  </div>
+</div>
+	<div id ="search">
+    	<ul>
+        	<li><img src="img/search.png"></li>
+            <li>
+            	<p>
+                      <input type="text" placeholder="搜“美迪惠尔”试试,针剂补水面膜" class ="text"/>
+                      <input type="button" class ="btn"/>
+        		</p>
+            </li>
+        
+        </ul>
+    
+    
+    </div>
+</div>
+</body>
+</html>
